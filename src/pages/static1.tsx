@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function static1(){
+export default function Static1(){
 
     // const [num, setNum] = useState(0);
 

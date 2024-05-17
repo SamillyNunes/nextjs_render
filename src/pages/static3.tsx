@@ -2,6 +2,7 @@
 // Considere verificar esse comportamento em modo producao!
 export function getStaticProps(){
     return {
+        revalidate: 7,
         props: {
             number: Math.random(),
         }
@@ -9,10 +10,10 @@ export function getStaticProps(){
 
 }
 
-export default function Static2(props: any){
+export default function Static3(props: any){
     return (
         <div>
-            <h1> Estático #02 </h1>
+            <h1> Estático #03 </h1>
             <h2> {props.number} </h2>
         </div>
     );
